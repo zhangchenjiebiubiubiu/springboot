@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+# jdbc 的配置
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_gm?useSSL=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password:
+
+  # 视图解析器
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
+
+# Mybatis
+mybatis:
+  type-aliases-package: it.gm.springboot.pojo

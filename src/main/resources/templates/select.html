@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索结果</title>
+</head>
+<body>
+<tr th:each="user,userStat:${list}">
+    <td th:text="${user.id}"></td>
+    <td th:text="${user.username}"></td>
+    <td th:text="${user.password}"></td>
+    </br>
+</tr>
+
+</tr>
+
+</body>
+</html>
